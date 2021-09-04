@@ -88,6 +88,14 @@ button {
   box-shadow: 0 5px 2px hsl(154, 54%, 35%);
 }
 
+button:hover {
+  background-color: hsl(154, 81%, 75%);
+}
+
+button:active {
+  background-color: hsl(154, 61%, 85%);
+}
+
 form p {
   text-align: center;
   font-size: 1em;
@@ -99,6 +107,24 @@ form p {
 form a {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
+}
+
+.error-mssg {
+  color: red;
+  font-size: 0.8em;
+  position: relative;
+  left: -7em;
+  margin: 0;
+  top: -2em;
+}
+
+.error-mssg:nth-of-type(1),
+:nth-of-type(2) {
+  left: -9em;
+}
+
+.error-mssg:nth-of-type(3) {
+  left: -8em;
 }
 
 .attribution {
@@ -131,6 +157,21 @@ form a {
   button {
     width: 25em;
     font-size: 1.5em;
+  }
+
+  .error-mssg {
+    font-size: 0.9em;
+    left: -13em;
+    top: -1.7em;
+  }
+
+  .error-mssg:nth-of-type(1),
+  :nth-of-type(2) {
+    left: -16em;
+  }
+
+  .error-mssg:nth-of-type(3) {
+    left: -15em;
   }
 
   .attribution {
@@ -202,6 +243,21 @@ form a {
     width: 38em;
     font-size: 0.7em;
     padding: 1.5em 3em;
+  }
+
+  .error-mssg {
+    font-size: 0.6em;
+    left: -15em;
+    top: -0.8em;
+  }
+
+  .error-mssg:nth-of-type(1),
+  :nth-of-type(2) {
+    left: -17em;
+  }
+
+  .error-mssg:nth-of-type(3) {
+    left: -16em;
   }
 
   .attribution {
